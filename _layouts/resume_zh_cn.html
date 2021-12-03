@@ -1,0 +1,146 @@
+---
+layout: default
+---
+
+    <div class="container">
+      <header>
+        <div class="name-wrapper">
+          <div id="fullname" class="title">
+            {{ site.data.resume_zhcn.name }}
+          </div>
+          <div id="jobtitle" class="sub-title">
+            {{ site.data.resume_zhcn.jobtitle }}
+          </div>
+        </div>
+        <div id="contact" class="contact">
+          {% for item in site.data.resume_zhcn.contact %}
+          <div class="contact-item">
+            {% if item.link %}
+            <a href="{{ item.link }}">
+            {% endif %}
+            <i class="fa {{ item.icon }} aria-hidden="true></i> {{ item.text }}
+            {% if item.link %}
+            </a>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </header>
+
+      <section id="skills">
+        <div class="section-title">
+          专业技能
+        </div>
+        <div class="section-content">
+          {% for skill in site.data.resume_zhcn.skills %}
+          <div class="block">
+            <div class="block-title">
+              {{ skill.title }}
+            </div>
+            <div class="block-content">
+              {% for item in skill.items %}
+                <p class="skill-item">{{item}}</p>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-title">
+          工作经历
+        </div>
+        <div class="section-content">
+          {% for exp in site.data.resume_zhcn.experience %}
+          <div class="block">
+            <div class="block-title">
+              {{ exp.title }}
+            </div>
+            <div class="block-subtitle">
+              {{ exp.duration }} | {{ exp.company }}
+            </div>
+            <div class="block-content">
+              {% for item in exp.description %}
+                <p class="skill-item">{{item}}</p>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-title">
+          项目
+        </div>
+        <div class="section-content">
+          {% for project in site.data.resume_zhcn.projects %}
+          <div class="block">
+            <div class="block-title">
+              {{ project.name }}
+            </div>
+            <div class="block-subtitle">
+              {{ project.contribution }}
+            </div>
+            <div class="block-content">
+              <span class="block-title">项目描述：</span>{{ project.description }}
+            </div>
+            <div class="block-content">
+              <span class="block-title">技术要点：</span>
+              {% for item in project.detail %}
+                <p class="skill-item">{{item}}</p>
+              {% endfor %}
+            </div>
+            <div class="block-content">
+              <span class="block-title">职责：</span>
+              {% for item in project.own %}
+                <p class="skill-item">{{item}}</p>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="languages">
+        <div class="section-title">
+          公司荣誉
+        </div>
+        <div class="section-content">
+          {% for componey in site.data.resume_zhcn.componeyGroup %}
+          <p class="block-title">{{ componey.name }}</p>
+          {% endfor %}
+        </div>
+      </section>
+      <section id="git">
+        <div class="section-title">
+          开源项目
+        </div>
+        <div class="section-content">
+          {% for componey in site.data.resume_zhcn.componeyGroup2 %}
+          <p class="block-title">{{ componey.name }}</p>
+          {% endfor %}
+        </div>
+      </section>
+      <section id="education">
+        <div class="section-title">
+          教育
+        </div>
+        <div class="section-content">
+          {% for edu in site.data.resume_zhcn.education %}
+          <div class="block">
+            <div class="block-title">
+              {{ edu.university }}
+            </div>
+            <div class="block-subtitle">
+              {{ edu.duration }} | {{ edu.location }}
+            </div>
+            <div class="block-content">
+              {{ edu.major }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    </div>

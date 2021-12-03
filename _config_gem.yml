@@ -1,5 +1,6 @@
 title: Résumé
-baseurl: "/resume"
+baseurl: "/resume/"
+theme: "jekyll-theme-minimal-resume"
 exclude:
   - README.md
   - "README_zh-CN.md"
@@ -11,4 +12,3 @@ exclude:
   - /screenshots
   - /fixtures
   - Rakefile
-color: blue
