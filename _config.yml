@@ -2,7 +2,7 @@ title: Résumé
 baseurl: "/resume"
 exclude:
   - README.md
-  - "README_zh-CN.md"
+  - "resume-ys.md"
   - LICENSE
   - Gemfile
   - Gemfile.lock
