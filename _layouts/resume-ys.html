@@ -69,6 +69,17 @@ layout: default
           {% endfor %}
         </div>
       </section>
+      <br/>
+      <section id="languages">
+        <div class="section-title">
+          公司荣誉
+        </div>
+        <div class="section-content">
+          {% for componey in site.data.resume_zhcn.componeyGroup %}
+          <p class="block-title">{{ componey.name }}</p>
+          {% endfor %}
+        </div>
+      </section>
 
       <section id="projects">
         <div class="section-title">
@@ -99,17 +110,6 @@ layout: default
               {% endfor %}
             </div>
           </div>
-          {% endfor %}
-        </div>
-      </section>
-
-      <section id="languages">
-        <div class="section-title">
-          公司荣誉
-        </div>
-        <div class="section-content">
-          {% for componey in site.data.resume_zhcn.componeyGroup %}
-          <p class="block-title">{{ componey.name }}</p>
           {% endfor %}
         </div>
       </section>
