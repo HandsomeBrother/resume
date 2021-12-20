@@ -13,25 +13,25 @@ contact:
 skills:
   - title: "核心应用技能"
     items: 
-      - 熟悉HTML+CSS页面布局，熟悉HTML5、CSS3新特性；
+      - 熟悉HTML+CSS页面布局，HTML5、CSS3新特性；
       - 熟悉移动端适配，弹性布局，浏览器兼容问题解决方案；
-      - 熟悉ECMAScript标准，熟悉OOP、AOP编程，对表现与数据分离、Web语义化等有一定理解，对于代码设计的可维护性、简洁性有着较高的自我要求，对专注度分离有执着的追求；
       - 熟悉react技术栈,有webpack + react + Redux的项目开发经验；
       - 熟悉lighthouse，实现过基于lighthouse源码+百度radar+puppeteer的CLI工具；
-      - 熟悉TypeScript，有项目使用经验，了解ts新特性和优势；
-      - 熟悉GraphQL, api 设计方案，了解GraphQL设计思想，熟悉apollo-server使用；
-      - 熟悉nodejs, 了解mongodb、mongoose.js，有koa2+apollo-server+mongoosejs 服务端项目实战经验
-      - 熟悉H5小游戏开发，基于canvas开发过小游戏「叠箱子」
+      - 熟悉ECMAScript标准，熟悉OOP、AOP编程，对表现与数据分离、Web语义化等有一定理解，对于代码设计的可维护性、简洁性有着较高的自我要求，对专注度分离有执着的追求；
+      - 熟悉nodejs, 使用过koa2, 了解mongodb、mongoose.js
       - 熟悉前端工程化，参与过前端工程化建设
+      - 了解H5小游戏开发，基于canvas开发过小游戏「叠箱子」
       - 了解nginx常用配置；HTTP协议
+      - 了解TypeScript，了解ts新特性和优势；
+      - 了解GraphQL, apollo-server使用；
   - title: "业务技能"
     items: 
-      - 熟悉移动端网页和hybrid开发，熟悉用户增长前端技术栈，熟悉universalLink，scheme、口令调起app技术
-      - 熟悉微信、支付宝小程序开发
+      - 熟悉移动端网页和hybrid开发、用户增长前端技术栈、universalLink，scheme、口令调起app技术
+      - 熟悉微信小程序开发
   - title: "用户体验"
     items: 
       - 熟悉前端性能优化常用解决方案，参与设计开发过相关技术项目
-      - 熟悉业内用户体验度量体系PULSE、HEART、PTECH
+      - 了解业内用户体验度量体系PULSE、HEART、PTECH
   - title: "工作流"
     items: 
       - 熟练掌握git,SourceTree代码管理工具
