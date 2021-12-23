@@ -104,6 +104,15 @@ layout: default
               {% endfor %}
             </div>
             <div class="block-content">
+
+              {% if project.hard%}
+                <span class="block-title">难点：</span>
+                {% for item in project.hard %}
+                  <p class="skill-item">{{item}}</p>
+                {% endfor %}
+              {% endif %}
+            </div>
+            <div class="block-content">
               <span class="block-title">职责：</span>
               {% for item in project.own %}
                 <p class="skill-item">{{item}}</p>
